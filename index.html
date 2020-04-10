@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Colégio aliança</title>
+    <title>Colégio aliança - Home</title>
 </head>
 <body>
 
@@ -15,7 +15,7 @@
             <nav class="navbar navbar-expand-md navbar-dark">
                 <!--Logo-->
                 <a href="index.html" class="navbar-brand">
-                    <img src="images/logo.png" alt="Logo colégio aliança">
+                    <img id="myNavbarLogo" src="images/logo.png" alt="Logo colégio aliança">
                 </a>
 
                 <!--Menu hamburguer-->
@@ -27,9 +27,9 @@
                 <div class="collapse navbar-collapse" id="navegacao">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown"> <!--Início item dropdown-->
-                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            <a href="#" class="my-nav-link nav-link dropdown-toggle" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Principal</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="my-navbar-dropdown-menu dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a href="" class="dropdown-item">Home</a>
                                 <a href="" class="dropdown-item">Sobre o colégio</a>
                                 <a href="" class="dropdown-item">Objetivos</a>
@@ -37,9 +37,29 @@
                         </li> <!--Fim do item dropdown-->
 
                         <li class="nav-item dropdown"> <!--Início item dropdown-->
-                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            <a href="#" class="my-nav-link nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mídia</a>
+                            <div class="my-navbar-dropdown-menu dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a href="" class="dropdown-item">Album de fotos</a>
+                                <a href="" class="dropdown-item">Seção de vídeos</a>
+                                <a href="" class="dropdown-item">Laboratórios</a>
+                            </div>
+                        </li> <!--Fim do item dropdown-->
+
+                        <li class="nav-item dropdown"> <!--Início item dropdown-->
+                            <a href="#" class="my-nav-link nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Material</a>
+                            <div class="my-navbar-dropdown-menu dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a href="" class="dropdown-item">Agenda escolar</a>
+                                <a href="" class="dropdown-item">Lista de materiais</a>
+                                <a href="" class="dropdown-item">Eventos</a>
+                            </div>
+                        </li> <!--Fim do item dropdown-->
+
+                        <li class="nav-item dropdown"> <!--Início item dropdown-->
+                            <a href="#" class="my-nav-link nav-link dropdown-toggle" id="navbarDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Matrícula</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="my-navbar-dropdown-menu dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a href="" class="dropdown-item">Matricular</a>
                                 <a href="" class="dropdown-item">Contato</a>
                             </div>
