@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Header --- */
+
+    header{
+        background-color: #df5616e5;
+        border-bottom: 3px groove rgb(0, 132, 255);
+    }
+
+    .my-nav-link{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    /* Dropdown */
+        .my-navbar-dropdown-menu{
+            border: 1px solid rgba(98, 98, 98, 0.657);
+            background-color: rgba(206, 206, 206, 0.746);
+        }
+        
+    /* Dropdown */
+/* --- Header --- */
+
+
+
+/* ----- meadia queries ----- */
+    @media(max-width: 768px){ /*Medium bootstrap screen size */
+        /* -- Header -- */
+            #myNavbarLogo{
+                height: 43px;
+                width: auto;
+            }
+        /* -- Header -- */
+    }
+
+/* ----- meadia queries ----- */
