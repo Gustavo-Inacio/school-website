@@ -1,3 +1,75 @@
-header{
-    background-color: #0f6674;
+body{
+    margin: 0;
+    padding: 0;
 }
+
+    /* --- making dropdown menu hoverable --- */
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 10px 14px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #df5616;
+        color: white;
+        text-decoration: underline;
+    }
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+
+    /* --- Header --- */
+
+    header{
+        background-color: #df5616e5;
+        border-bottom: 3px groove rgb(0, 132, 255);
+    }
+
+    .my-nav-link{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    /* Dropdown */
+        .my-navbar-dropdown-menu{
+            border: 1px solid rgba(98, 98, 98, 0.657);
+            background-color: rgba(206, 206, 206, 0.746);
+        }
+        
+    /* Dropdown */
+/* --- Header --- */
+
+
+
+/* ----- meadia queries ----- */
+    @media(max-width: 768px){ /*Medium bootstrap screen size */
+        /* -- Header -- */
+            #myNavbarLogo{
+                height: 43px;
+                width: auto;
+            }
+        /* -- Header -- */
+    }
+
+/* ----- meadia queries ----- */
+
