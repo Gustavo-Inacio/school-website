@@ -62,13 +62,13 @@ body{
 
 
 /* ----- meadia queries ----- */
-    @media(max-width: 768px){ /*Medium bootstrap screen size */
+    @media(max-width: 992px){ /*large bootstrap screen size */
         /* -- Header -- */
-            #myNavbarLogo{
-                height: 43px;
+            .navbar-brand img{
+                height: 60px;
                 width: auto;
             }
-        /* -- Header -- */
+        /* -- Header -- *
     }
 
 /* ----- meadia queries ----- */
