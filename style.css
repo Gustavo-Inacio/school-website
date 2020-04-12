@@ -42,6 +42,7 @@ body{
     header{
         background-color: #df5616e5;
         border-bottom: 3px groove rgb(0, 132, 255);
+        margin-bottom: 10px;
     }
 
     .my-nav-link{
@@ -59,8 +60,34 @@ body{
     /* Dropdown */
 /* --- Header --- */
 
+/* --- Intro ---  */
+    .my-intro-slide-text{
+        position: absolute;
+        left: 30px;
+        top: 35px;
 
+        font-size: 30px;
+        font-weight: 700;
+        color: rgb(15, 107, 226);
+        text-shadow: 3px 2px 2px black;
 
+    }
+
+    .my-carousel-controls > .left{
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 10px;
+        color: rgba(22, 26, 224, 0.692);
+    }
+    .my-carousel-controls > .right{
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        right: 10px;
+        color: rgba(22, 26, 224, 0.692);
+    }
+/* --- Intro ---  */
 /* ----- meadia queries ----- */
     @media(max-width: 992px){ /*large bootstrap screen size */
         /* -- Header -- */
