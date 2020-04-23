@@ -118,14 +118,15 @@ body{
         height: calc(100% - var(--var-intro-less-height));
         width: 100%;
     }
+
+    .card .btn-outline-secondary{
+        margin-bottom:4px ;
+    }
     
 /* --- Intro ---  */
 
 /* --- Welcome Section --- */
-    .my-welcome-card{
-        max-height: 332px;
-        height: 332px;   
-    }
+    
 
 /* --- Welcome Section --- */
 
@@ -148,7 +149,7 @@ body{
 /* --- Login --- */
 
 /* ----- meadia queries ----- */
-    @media(max-width: 992px){ /*large devices screen size */
+    @media(max-width: 992px){ /* < large */
         
             .navbar-brand img{
                 /* -- Header -- */
@@ -156,18 +157,21 @@ body{
                 width: auto;
 
                 /* -- Header -- */
-            }
+            }   
         }
 
     
-    @media (max-width: 768px) {
+    @media (max-width: 768px) { /* < medium */
         .display-4{
             font-size: 40px;
         }
+
+        .my-shadow{
+            border-radius: 5px;
+        }       
     }
-    @media (max-width: 576px) {
-        
-    }
+
+    
 
 
 /* ----- meadia queries ----- */
