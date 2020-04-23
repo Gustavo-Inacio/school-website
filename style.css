@@ -1,8 +1,16 @@
+@import 'bootstrap-4.4.1-dist/css/bootstrap.min.css';
+
+:root{
+    --var-intro-less-height: 40px; /*variable that sets how many pixels we take out from the height in the intro */
+}
 body{
     margin: 0;
     padding: 0;
 }
 
+.my-shadow{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
     /* --- making dropdown menu hoverable --- */
     
     /* The container <div> - needed to position the dropdown content */
@@ -42,7 +50,6 @@ body{
     header{
         background-color: #df5616e5;
         border-bottom: 3px groove rgb(0, 132, 255);
-        margin-bottom: 10px;
     }
 
     .my-nav-link{
@@ -54,13 +61,15 @@ body{
     /* Dropdown */
         .my-navbar-dropdown-menu{
             border: 1px solid rgba(98, 98, 98, 0.657);
-            background-color: rgba(206, 206, 206, 0.746);
+            background-color: rgb(206, 206, 206);
         }
         
     /* Dropdown */
 /* --- Header --- */
 
+
 /* --- Intro ---  */
+    /* Carousel */
     .my-intro-slide-text{
         position: absolute;
         left: 30px;
@@ -80,6 +89,7 @@ body{
         left: 10px;
         color: rgba(22, 26, 224, 0.692);
     }
+
     .my-carousel-controls > .right{
         position: absolute;
         top: 50%;
@@ -87,16 +97,76 @@ body{
         right: 10px;
         color: rgba(22, 26, 224, 0.692);
     }
+
+     /* Card */
+    .card h2{
+        margin: 0;
+        text-align: center;
+        color: rgb(88, 15, 15);
+    } 
+    
+    #formando{
+        border: 3px outset gray;
+    }
+
+    .my-intro-card{
+        height: calc(100% - var(--var-intro-less-height));
+    }
+
+    .my-intro-img-maxi{
+        size: cover;
+        height: calc(100% - var(--var-intro-less-height));
+        width: 100%;
+    }
+    
 /* --- Intro ---  */
+
+/* --- Welcome Section --- */
+    .my-welcome-card{
+        max-height: 332px;
+        height: 332px;   
+    }
+
+/* --- Welcome Section --- */
 /* ----- meadia queries ----- */
-    @media(max-width: 992px){ /*large bootstrap screen size */
-        /* -- Header -- */
+    @media(max-width: 992px){ /*large devices screen size */
+        
             .navbar-brand img{
+                /* -- Header -- */
                 height: 60px;
                 width: auto;
+
+                /* -- Header -- */
             }
         }
-        /* -- Header -- *
+
+    
+    @media (max-width: 768px) {
+    
+    }
+    @media (max-width: 576px) {
+
+    }
+
 
 /* ----- meadia queries ----- */
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
 
