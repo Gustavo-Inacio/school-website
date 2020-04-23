@@ -132,82 +132,123 @@
                 
             </div>
         </div>
-    <!--   Intro    -->
-    </div>
-    <!--Juombotron-->
-    <div class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-sm-12">
-                    <p class="lead">Prezado visitante, nossas matrículas etão abertas! Dê uma olhada lá!</p>
-                </div>
-                <div class="col-lg-2 col-sm-12">
-                   <a href="#"><button type="button" class="btn btn-outline-secondary">Página Matrículas</button></a> 
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Juombotron-->
-    <!--   Welcome Section -->
-    <div class="container">
-        <div class="row welcome text-center p-3">
-            <div class="col-12">
-                <h2 class="my-titles">Com determinação...</h2>
-                <hr>
-            </div>
-            <div class="col-12">
-                <p class="lead">A nossa escola, com parceria com o sistema Maxi de ensino, deixamos os nossos alunos preparados para qualquer vestibular.</p>
-            </div>
-        </div>
-    </div>
-    <!--   Three colum  -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-xs-12 mt-3">
-                    <div class="card">
-                        <img src="images/new/Maxi-card.png" alt="" class="card-img-top">
-                        <div class="card-body my-welcome-card">
-                            <h4 class="card-title">Sistema Maxi.</h4>
-                            <p class="card-text lead">A nossa metodologia didatica é apostilada, assim todos os professores podem seguir em conjunto sobre o mesmo assunto. Nada melhor do que o sistema Maxi de ensino para isso.</p>
-                           <a href="#"><button class="btn btn-outline-secondary">Confira o site.</button></a>                    
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-xs-12 mt-3">
-                    <div class="card">
-                        <img src="images/new/oba.png" alt="" class="card-img-top">
-                        <div class="card-body my-welcome-card">
-                            <h4 class="card-title">Olimpíadas brasileiras de astoronomia e astronáutica.</h4>
-                            <p class="card-text lead">A nossa escola participa das olimpíadas brasileiras de astronomia e astronática. Com os conhecimentos de astronômicos de nossos alunos, já conquistamos várias medalhas!</p>
-                            <div class="row d-flex justify-content-around">
-                                <a href="#"><button class="btn btn-outline-secondary">Confira o site oficial.</button></a>
-                            
-                                <a href="#"><button class="btn btn-outline-secondary">Nossa olimpíada.</button></a>   
-                            </div>      
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xs-12 mt-3">
-                    <div class="card">
-                        <img src="images/new/obmep.png" alt="obmep" class="card-img-top">
-                        <div class="card-body my-welcome-card">
-                            <h4 class="card-title">Olimpíadas brasileiras de matemática.</h4>
-                            <p class="card-text lead">Também participamos da OBMEP! Nela é colocado em prática toda a lógica e os conhecimentos de matemática do aluno.</p> 
-                            <div class="row d-flex justify-content-around">
-                                <a href="#"><button class="btn btn-outline-secondary ">Confira o site oficial.</button></a>
-                            
-                                <a href="#"><button class="btn btn-outline-secondary">Nossa olimpíada.</button></a>   
-                            </div>               
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-        </div>
+        <!--   Intro    -->
+ 
+        <hr>
+    
+        <!--Principal content-->
 
-        <div class="jumbotron"></div>
-    <!--   Three colum  -->
-    <!--   Welcome Section  -->
+            <section class="row">
+                <div class="col-12"><!--Início coluna-->
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <h1 class="display-4">Faça sua matrícula já</h1>
+                            <p class="lead">O colégio aliança tem orgulho de ter você como novo aluno. A matricula é simples e rápida, então não perca essa chançe!</p>
+                            <hr class="my-4">
+                            <p class="lead"> <a href="" class="btn btn-primary btn-lg">Matricule-se</a> </p>
+                        </div>
+                    </div>
+                </div><!--fim coluna-->
+            </section>
+
+            <hr>
+        
+            <section class="row pb-2" id="sobre-escola"><!--Início da row-->
+                <div class="col-lg-5 borda-hr d-none d-lg-block"><!--Início coluna-->
+                    <h2>Nos conheça</h2>
+                    <iframe height="300" width="100%" src="https://www.youtube.com/embed/P8_tdbsm9Ag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div><!--fim coluna-->
+                
+                <div class="col-lg-5 offset-1" style="padding-top: 30px;"><!--Início coluna-->
+                    <h2 class="subir-titulo">Ja é aluno?</h2>
+                    <form id="login">
+                        <fieldset>
+                            <legend>Faça seu login</legend>
+                            <em class="text-secondary">Seu E-mail</em>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fas fa-user"></i> </span>
+                                </div>
+                                <input type="text" id="Login" class="form-control" placeholder="E-mail">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">@aluno.alianca.org</span>
+                                </div>
+                            </div>
+                            <em class="text-secondary">Sua senha</em>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fas fa-key"></i> </span>
+                                </div>
+                                <input type="password" id="Login" class="form-control" placeholder="Senha">
+                            </div>
+                            <button class="btn btn-primary "> <i class="fas fa-sign-in-alt"></i> &nbsp; Login</button>
+                            <a href="#"><small class="float-right text-secondary">Esqueci a senha</small></a>
+                        </fieldset>
+
+                    </form>
+                </div><!--fim coluna-->
+            </section><!--/fim da row-->
+        <!--Principal content-->
+
+        <!--   Welcome Section -->
+        <div class="container">
+            <div class="row welcome text-center p-3">
+                <div class="col-12">
+                    <h2 class="my-titles">Com determinação...</h2>
+                    <hr>
+                </div>
+                <div class="col-12">
+                    <p class="lead">A nossa escola, com parceria com o sistema Maxi de ensino, deixamos os nossos alunos preparados para qualquer vestibular.</p>
+                </div>
+            </div>
+        </div>
+        <!--   Three colum  -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-xs-12 mt-3">
+                        <div class="card">
+                            <img src="images/new/Maxi-card.png" alt="" class="card-img-top">
+                            <div class="card-body my-welcome-card">
+                                <h4 class="card-title">Sistema Maxi.</h4>
+                                <p class="card-text lead">A nossa metodologia didatica é apostilada, assim todos os professores podem seguir em conjunto sobre o mesmo assunto. Nada melhor do que o sistema Maxi de ensino para isso.</p>
+                            <a href="#"><button class="btn btn-outline-secondary">Confira o site.</button></a>                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-xs-12 mt-3">
+                        <div class="card">
+                            <img src="images/new/oba.png" alt="" class="card-img-top">
+                            <div class="card-body my-welcome-card">
+                                <h4 class="card-title">Olimpíadas brasileiras de astoronomia e astronáutica.</h4>
+                                <p class="card-text lead">A nossa escola participa das olimpíadas brasileiras de astronomia e astronática. Com os conhecimentos de astronômicos de nossos alunos, já conquistamos várias medalhas!</p>
+                                <div class="row d-flex justify-content-around">
+                                    <a href="#"><button class="btn btn-outline-secondary">Confira o site oficial.</button></a>
+                                
+                                    <a href="#"><button class="btn btn-outline-secondary">Nossa olimpíada.</button></a>   
+                                </div>      
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12 mt-3">
+                        <div class="card">
+                            <img src="images/new/obmep.png" alt="obmep" class="card-img-top">
+                            <div class="card-body my-welcome-card">
+                                <h4 class="card-title">Olimpíadas brasileiras de matemática.</h4>
+                                <p class="card-text lead">Também participamos da OBMEP! Nela é colocado em prática toda a lógica e os conhecimentos de matemática do aluno.</p> 
+                                <div class="row d-flex justify-content-around">
+                                    <a href="#"><button class="btn btn-outline-secondary ">Confira o site oficial.</button></a>
+                                
+                                    <a href="#"><button class="btn btn-outline-secondary">Nossa olimpíada.</button></a>   
+                                </div>               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>            
+        <!--   Three colum  -->
+        <!--   Welcome Section  -->
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

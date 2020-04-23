@@ -128,6 +128,25 @@ body{
     }
 
 /* --- Welcome Section --- */
+
+/* --- Login --- */
+#login legend{
+    text-transform: uppercase;
+    text-shadow: 1.5px 1px 2px rgba(0, 0, 0, 0.432);
+    font-size: 1.2em;
+}
+
+#login .input-group-prepend .input-group-text{
+    background: #df5616 linear-gradient(to bottom, #df5616, #ff874f);
+    color: white;
+}
+
+#login fieldset{
+    padding: 10px;
+    background: rgba(128, 128, 128, 0.11);
+}
+/* --- Login --- */
+
 /* ----- meadia queries ----- */
     @media(max-width: 992px){ /*large devices screen size */
         
