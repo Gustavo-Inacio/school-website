@@ -1,16 +1,16 @@
 @import 'bootstrap-4.4.1-dist/css/bootstrap.min.css';
+@import 'generalStyles.css';
 
 :root{
     --var-intro-less-height: 40px; /*variable that sets how many pixels we take out from the height in the intro */
+    --var-welcome-card-height: 721px; /* it defines the height in pexels of a card and a crad-body of welcome section*/
 }
 body{
     margin: 0;
     padding: 0;
 }
 
-.my-shadow{
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
-}
+
     /* --- making dropdown menu hoverable --- */
     
     /* The container <div> - needed to position the dropdown content */
@@ -116,7 +116,7 @@ body{
     .my-intro-img-maxi{
         size: cover;
         height: calc(100% - var(--var-intro-less-height));
-        width: 100%;
+        width: calc(100% - var(--var-intro-less-height));
     }
 
     .card .btn-outline-secondary{
@@ -126,9 +126,16 @@ body{
 /* --- Intro ---  */
 
 /* --- Welcome Section --- */
-    
-
+  
 /* --- Welcome Section --- */
+
+#enrol{
+    width: 100%;
+    padding-left: calc(1.5rem + 2rem) !important;
+    padding-right: calc(1.5rem + 2rem) !important;
+    padding-bottom: 1.8rem;
+    padding-top: 1.8rem;
+}
 
 /* --- Login --- */
 #login legend{
@@ -149,6 +156,38 @@ body{
 /* --- Login --- */
 
 /* ----- meadia queries ----- */
+    @media(min-width: 1201px){ /* < extra-large */
+        #threeColum .my-welcome-btn-position-bot{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+        }
+
+        .my-welcome-card-height-0, .my-welcome-card-height-1{
+            max-height: 637px;
+            height: 637px;
+        }
+        
+    }                                               
+    @media (max-width: 1200px){ /* < large */
+
+        #threeColum .my-welcome-btn-position-bot{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+        }
+
+        .my-welcome-card-height-0, .my-welcome-card-height-1{
+            max-height: var(--var-welcome-card-height);
+            height: var(--var-welcome-card-height);
+        }
+
+        
+
+    }               
+
     @media(max-width: 992px){ /* < large */
         
             .navbar-brand img{
@@ -158,18 +197,36 @@ body{
 
                 /* -- Header -- */
             }   
+
+            #threeColum .card-body{
+                max-height: fit-content;
+                height: fit-content;
+            }
+
+            .my-welcome-card-height-0{
+                height: 600px;
+            }
         }
 
     
     @media (max-width: 768px) { /* < medium */
-        .display-4{
-            font-size: 40px;
+
+        #threeColum .my-welcome-btn-position-bot{
+            position: relative;
+            margin-top: 40px;
+            width: 100%;
         }
 
-        .my-shadow{
-            border-radius: 5px;
-        }       
+        .my-welcome-card-height-0, .my-welcome-card-height-1,.my-welcome-card-height-0 .card-body, .my-welcome-card-height-1 .card-body{
+            height: fit-content !important;
+            max-height: fit-content !important;
+        }
+        
     }
+
+    
+
+    
 
     
 
