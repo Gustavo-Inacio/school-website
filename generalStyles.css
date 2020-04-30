@@ -1,0 +1,65 @@
+.my-shadow{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+
+.my-row-fluid{
+    margin: -1.5rem !important;
+    width: calc(100% + 2*1.5rem);
+}
+
+
+
+ /* --- Media queries --- */
+    @media(min-width: 1201px){ /* xl */
+        .my-font-size{
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    }
+    @media (max-width: 1200px){ /*lg */
+
+    }
+    @media (max-width: 992px){ /* md */
+        
+    }
+    @media (max-width: 768px){ /* sm */
+        .display-4{
+            font-size: 40px !important;
+        }
+
+        .my-shadow{
+            border-radius: 5px;
+        }  
+
+        .my-font-size{
+            font-size: calc(133.3%);
+        }
+    }
+
+    @media (max-width: 576px){ /* xs */
+        .my-font-size{
+            font-size: calc(100%);
+        }
+        
+    }
+
+   
+ /* --- Media queries --- */
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
