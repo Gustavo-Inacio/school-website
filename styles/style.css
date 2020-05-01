@@ -232,7 +232,7 @@ footer{
     border-top: 3px groove #0084ff;
 }
 footer #redes-sociais{
-    padding: 15px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -254,7 +254,7 @@ footer #redes-sociais .telefone{
 }
 
 footer #footer-nav{
-    padding: 15px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -268,7 +268,7 @@ footer #copy{
     text-align: center;
 }
 
-footer #copy em{15px
+footer #copy em{
     font-weight: 700;
     color: #df5616;
 }
