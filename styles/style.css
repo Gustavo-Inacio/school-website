@@ -1,7 +1,9 @@
 @import 'bootstrap-4.4.1-dist/css/bootstrap.min.css';
+@import 'generalStyles.css';
 
 :root{
     --var-intro-less-height: 40px; /*variable that sets how many pixels we take out from the height in the intro */
+    --var-welcome-card-height: 721px; /* it defines the height in pexels of a card and a crad-body of welcome section*/
 }
 body{
     margin: 0;
@@ -9,9 +11,7 @@ body{
     overflow-x: hidden;
 }
 
-.my-shadow{
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
-}
+
     /* --- making dropdown menu hoverable --- */
     
     /* The container <div> - needed to position the dropdown content */
@@ -117,7 +117,7 @@ body{
     .my-intro-img-maxi{
         size: cover;
         height: calc(100% - var(--var-intro-less-height));
-        width: 100%;
+        width: calc(100% - var(--var-intro-less-height));
     }
 
     .card .btn-outline-secondary{
@@ -127,9 +127,16 @@ body{
 /* --- Intro ---  */
 
 /* --- Welcome Section --- */
-    
-
+  
 /* --- Welcome Section --- */
+
+#enrol{
+    width: 100%;
+    padding-left: calc(1.5rem + 2rem) !important;
+    padding-right: calc(1.5rem + 2rem) !important;
+    padding-bottom: 1.8rem;
+    padding-top: 1.8rem;
+}
 
 /* --- Login --- */
 #login legend{
@@ -150,6 +157,38 @@ body{
 /* --- Login --- */
 
 /* ----- meadia queries ----- */
+    @media(min-width: 1201px){ /* < extra-large */
+        #threeColum .my-welcome-btn-position-bot{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+        }
+
+        .my-welcome-card-height-0, .my-welcome-card-height-1{
+            max-height: 637px;
+            height: 637px;
+        }
+        
+    }                                               
+    @media (max-width: 1200px){ /* < large */
+
+        #threeColum .my-welcome-btn-position-bot{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+        }
+
+        .my-welcome-card-height-0, .my-welcome-card-height-1{
+            max-height: var(--var-welcome-card-height);
+            height: var(--var-welcome-card-height);
+        }
+
+        
+
+    }               
+
     @media(max-width: 992px){ /* < large */
         
             .navbar-brand img{
@@ -159,47 +198,87 @@ body{
 
                 /* -- Header -- */
             }   
+
+            #threeColum .card-body{
+                max-height: fit-content;
+                height: fit-content;
+            }
+
+            .my-welcome-card-height-0{
+                height: 600px;
+            }
         }
 
     
     @media (max-width: 768px) { /* < medium */
-        .display-4{
-            font-size: 40px;
+
+        #threeColum .my-welcome-btn-position-bot{
+            position: relative;
+            margin-top: 40px;
+            width: 100%;
         }
 
-        .my-shadow{
-            border-radius: 5px;
-        }       
+        .my-welcome-card-height-0, .my-welcome-card-height-1,.my-welcome-card-height-0 .card-body, .my-welcome-card-height-1 .card-body{
+            height: fit-content !important;
+            max-height: fit-content !important;
+        }
+        
     }
 
-
-/*Footer*/
+/*------------Footer------------*/
 footer{
     margin-top: 10px;
+    background: #e6e6e6;
+    border-top: 3px groove #0084ff;
+}
+footer #redes-sociais{
     padding: 15px;
-    background: #ececec;
+    text-align: center;
 }
 
-footer a:hover{
-    transition: .4s;
-    color: black;
+footer #redes-sociais i{
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 1.95em;
+    color: #0059ff;
+}
+
+footer #redes-sociais a i:hover{
+    cursor: pointer;
+    transition: .2s;
+    color: #001aff;
+}
+
+footer #redes-sociais .telefone{
     text-decoration: none;
 }
 
-@media(max-width: 768px) {
-    footer a{
-        font-size: 1.6em;
-    }
+footer #footer-nav{
+    padding: 15px;
+    text-align: center;
 }
 
-@media(min-width: 769px) {
-    footer a{
-        font-size: 2em;
-    }
+footer #footer-nav a{
+    padding: 10px;
 }
 
+footer #copy{
+    margin-top: 10px;
+    padding: 15px;
+    text-align: center;
+}
 
+footer #copy em{15px
+    font-weight: 700;
+    color: #df5616;
+}
 
+footer #copy span{
+    font-weight: 600;
+    color: #df5616;
+}
+
+/*------------Footer------------*/
 
 
     
