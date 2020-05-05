@@ -15,7 +15,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/generalStyles.css">
-    <link rel="stylesheet" href="styles/gallery.css.css">
+    <link rel="stylesheet" href="styles/gallery.css">
 
 
     <title>Colégio aliança - Home</title>
@@ -64,12 +64,7 @@
 
                         <li class="nav-item dropdown">
                             <!--Início item dropdown-->
-                            <a href="#" class="my-nav-link nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Matrícula</a>
-                            <div class="my-navbar-dropdown-menu dropdown-menu dropdown-content"
-                                aria-labelledby="navbarDropdown">
-                                <a href="" class="dropdown-item">Matricular</a>
-                            </div>
+                            <a href="#" class="my-nav-link nav-link">Matrícula</a>
                         </li>
                         <!--Fim do item dropdown-->
                     </ul>
@@ -86,8 +81,84 @@
         <section>
             <h2 class="text-center">Fotos, Vídeos e Laboratórios</h2>
             <div id="fotos">
-
+                <h4>Album de fotos</h4>
+                <hr>
+                <p>
+                    Estas fotos representam algumas atividades curriculares e extracurriculares da escola. Descubra também nossa diversificada estrutura, com bibliotecas, piscinas e salões para prática de esportes.
+                </p>
+                
+                <ul class="imagens">
+                    <li> 
+                        <figure> 
+                           <img src="images/photos/biblioteca.jpg" alt="Biblioteca"> 
+                            <figcaption>Biblioteca</figcaption>
+                        </figure>
+                    </li>
+                    <li> 
+                        <figure> 
+                            <img src="images/photos/piscina.jpg" alt="Piscina"> 
+                             <figcaption>Piscina</figcaption>
+                         </figure>
+                    </li>
+                    <li> 
+                        <figure> 
+                            <img src="images/photos/luta.jpg" alt="Aulas de judo">
+                             <figcaption>Aulas de judo</figcaption>
+                         </figure>
+                    </li> 
+                    <span class="clearfix"></span>
+                    <li> 
+                        <figure> 
+                            <img src="images/photos/Ballet.jpg" alt="Aulas de ballet"> 
+                             <figcaption>Aulas de ballet</figcaption>
+                         </figure>
+                    </li>
+                    <li> 
+                        <figure> 
+                            <img src="images/photos/fachada-01.jpg" alt="Fachada da escola">
+                             <figcaption>Fachada da escola</figcaption>
+                         </figure>
+                    </li>
+                </ul>
             </div>
+
+            <div class="clearfix"></div>
+
+            <h4>Laboratórios</h4>
+            <hr>
+            <p>
+                Também estamos equipados com ferramentas de alto nível, como computadores, microscópios e outros materias, para ajudar na aprendizagem dos nossos alunos.
+            </p>
+            
+            <ul class="imagens">
+                <li> 
+                    <figure> 
+                        <img src="images/photos/computacao_baixa.jpg" alt="Laboratório de computadores"> 
+                         <figcaption>Laboratório de computadores</figcaption>
+                     </figure>
+                </li>
+                <li> 
+                    <figure> 
+                        <img src="images/photos/lab_ciencias.jpg" alt="Laboratório de ciências">
+                         <figcaption>Laboratório de ciências com corpo humano</figcaption>
+                     </figure>
+                </li>
+                <span class="clearfix"></span>
+                <li> 
+                    <figure> 
+                        <img src="images/photos/lab_ciencias_bio.jpg" alt="Materiais do laboratório"> 
+                         <figcaption>Materiais do laboratório</figcaption>
+                     </figure>
+                </li>
+                <li> 
+                    <figure> 
+                        <img src="images/photos/laboratorio.jpg" alt="Microscópio do laboratório"> 
+                         <figcaption>Microscópio do laboratório</figcaption>
+                     </figure>
+                </li>
+            </ul>
+
+            <div class="clearfix"></div>
         </section>
 
         <!--   Three colum  -->
@@ -114,14 +185,11 @@
                 <div id="footer-nav" class="col-lg-6">
                     <h5>Continue explorando</h5>
                     <a href="">Home</a> <br>
-                    <a href="">Album de fotos</a> |
-                    <a href="">Seção de vídeos</a> |
-                    <a href="">Laboratórios</a> <br>
+                    <a href="">Fotos/vídeos</a><br>
                     <a href="">Agenda escolar</a> |
                     <a href="">Lista de materiais</a> |
                     <a href="">Eventos</a> <br>
-                    <a href="">Matricular</a> |
-                    <a href="">Contato</a> |
+                    <a href="">Matricular</a>
                 </div>
 
                 <div id="copy" class="col-lg-12">
@@ -144,5 +212,7 @@
         crossorigin="anonymous"></script>
     <script src="test.js"></script>
 </body>
+
+<script src="javascript/gallery.js"></script>
 
 </html>
