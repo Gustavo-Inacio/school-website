@@ -7,14 +7,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-    crossorigin="anonymous">
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/generalStyles.css">
+
+
     <title>Colégio aliança - Home</title>
 </head>
 
@@ -36,29 +38,13 @@
                 <!--Menu-->
                 <div class="collapse navbar-collapse" id="navegacao">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown">
-                            <!--Início item dropdown-->
-                            <a href="#" class="my-nav-link nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Principal</a>
-                            <div class="my-navbar-dropdown-menu dropdown-menu dropdown-content"
-                                aria-labelledby="navbarDropdown">
-                                <a href="" class="dropdown-item">Home</a>
-                                <a href="" class="dropdown-item">Sobre o colégio</a>
-                                <a href="" class="dropdown-item">Objetivos</a>
-                            </div>
+                        <li class="nav-item mr-1">
+                            <a href="index.html" class="my-nav-link nav-link active">Home</a>
                         </li>
                         <!--Fim do item dropdown-->
 
                         <li class="nav-item dropdown">
-                            <!--Início item dropdown-->
-                            <a href="#" class="my-nav-link nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mídia</a>
-                            <div class="my-navbar-dropdown-menu dropdown-menu dropdown-content"
-                                aria-labelledby="navbarDropdown">
-                                <a href="" class="dropdown-item">Album de fotos</a>
-                                <a href="" class="dropdown-item">Seção de vídeos</a>
-                                <a href="" class="dropdown-item">Laboratórios</a>
-                            </div>
+                            <a href="gallery.html" class="nav-link my-nav-link">fotos/vídeos</a>
                         </li>
                         <!--Fim do item dropdown-->
 
@@ -77,13 +63,7 @@
 
                         <li class="nav-item dropdown">
                             <!--Início item dropdown-->
-                            <a href="#" class="my-nav-link nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Matrícula</a>
-                            <div class="my-navbar-dropdown-menu dropdown-menu dropdown-content"
-                                aria-labelledby="navbarDropdown">
-                                <a href="" class="dropdown-item">Matricular</a>
-                                <a href="" class="dropdown-item">Contato</a>
-                            </div>
+                            <a href="#" class="my-nav-link nav-link">Matrícula</a>
                         </li>
                         <!--Fim do item dropdown-->
                     </ul>
@@ -93,10 +73,10 @@
     </header>
     <!--    HEADER    -->
 
-    
+
     <div class="container my-shadow  p-4 pt-3">
         <!--   Intro    -->
-        <div class="row">
+        <section class="row">
             <div class="col-md-12 col-lg-12 col-xl-8">
                 <div id="introSlide" class="carousel slide my-shadow" date-ride="carousel" data-interval="2000">
                     <ul class="carousel-indicators">
@@ -141,7 +121,7 @@
                         <div class="row">
                             <div class="col-xl-12 col-lg-9 pb-3">
                                 <p class="card-text lead my-font-size">
-                                    Promover a Educação Infantil e o Ensino Fundamental do 1º do ensino Fundamental I oa
+                                    Promover a Educação Infantil e o Ensino Fundamental do 1º do ensino Fundamental ao
                                     3º ano do ensino médio, tendo por princípio que, a construção do conhecimento é
                                     indispensável ao exercício ativo e crítico da cidadania na vida cultural, política,
                                     social e profissional.
@@ -160,7 +140,7 @@
                 </div>
 
             </div>
-        </div>
+        </section>
         <!--   Intro    -->
 
         <hr>
@@ -170,11 +150,11 @@
         <section class="row my-row-fluid">
             <!--Início coluna-->
             <div id="enrol" class="jumbotron">
-                    <h4 class="display-4 lead my-font-size">Faça sua matrícula já</h4>
-                    <p class="lead my-font-size">O colégio aliança tem orgulho de ter você como novo aluno. A matricula é simples
-                        e rápida, então não perca essa chançe!</p>
-                    <hr class="my-4">
-                    <p class="lead my-font-size"> <a href="" class="btn btn-primary btn-lg  my-font-size">Matricule-se</a> </p>
+                <h4 class="display-4 lead my-font-size">Faça sua matrícula já</h4>
+                <p class="lead my-font-size">O colégio aliança tem orgulho de ter você como novo aluno. A matricula é simples e rápida, então não perca essa chançe!</p>
+                <hr class="my-4">
+                <p class="lead my-font-size"> <a href="" class="btn btn-primary btn-lg  my-font-size">Matricule-se</a>
+                </p>
             </div>
             <!--fim coluna-->
         </section>
@@ -184,7 +164,7 @@
         <section class="row pb-2" id="sobre-escola">
             <div class="col-lg-5 borda-hr ">
                 <h2 class=" my-font-size">Nos conheça</h2>
-                <iframe height="300" width="100%" src="https://www.youtube.com/embed/P8_tdbsm9Ag" frameborder="0"
+                <iframe height="245" width="100%" src="https://www.youtube.com/embed/P8_tdbsm9Ag" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
@@ -228,7 +208,8 @@
                     <hr>
                 </div>
                 <div class="col-12">
-                    <p class="lead my-font-size">A nossa escola, com parceria com o sistema Maxi de ensino, deixamos os nossos alunos
+                    <p class="lead my-font-size">A nossa escola, com parceria com o sistema Maxi de ensino, deixamos os
+                        nossos alunos
                         preparados para qualquer vestibular.</p>
                 </div>
             </div>
@@ -238,65 +219,111 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mt-3 order-md-12 order-lg-1">
-                        <div class="card my-welcome-card-height-1"  id="testId">
+                        <div class="card my-welcome-card-height-1" id="testId">
                             <img src="images/new/oba.png" alt="" class="card-img-top">
                             <div class="card-body">
-                                <h4 class="card-title my-font-size">Olimpíadas brasileiras de astoronomia e astronáutica.</h4>
-                                <p class="card-text lead my-font-size">A nossa escola participa das olimpíadas brasileiras de astronomia
-                                    e astronática. Com os conhecimentos de astronômicos de nossos alunos, já conquistamos
+                                <h4 class="card-title my-font-size">Olimpíadas brasileiras de astoronomia e
+                                    astronáutica.</h4>
+                                <p class="card-text lead my-font-size">A nossa escola participa das olimpíadas
+                                    brasileiras de astronomia
+                                    e astronática. Com os conhecimentos de astronômicos de nossos alunos, já
+                                    conquistamos
                                     várias medalhas!</p>
                                 <div class="row d-flex justify-content-around my-welcome-btn-position-bot">
                                     <a href="#"><button class="btn btn-outline-secondary my-font-size">Confira o site
                                             oficial.</button></a>
-    
-                                    <a href="#"><button class="btn btn-outline-secondary my-font-size">Nossa olimpíada.</button></a>
+
+                                    <a href="#"><button class="btn btn-outline-secondary my-font-size">Nossa
+                                            olimpíada.</button></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="col-lg-4 col-md-6 mt-3 order-md-6 order-lg-6">
-                        <div class="card my-welcome-card-height-0" >
+                        <div class="card my-welcome-card-height-0">
                             <img src="images/new/Maxi-card.png" alt="" class="card-img-top">
                             <div class="card-body">
                                 <h4 class="card-title my-font-size">Sistema Maxi.</h4>
-                                <p class="card-text lead my-font-size">A nossa metodologia didatica é apostilada, assim todos os
-                                    professores podem seguir em conjunto sobre o mesmo assunto. Nada melhor do que o sistema
+                                <p class="card-text lead my-font-size">A nossa metodologia didatica é apostilada, assim
+                                    todos os
+                                    professores podem seguir em conjunto sobre o mesmo assunto. Nada melhor do que o
+                                    sistema
                                     Maxi de ensino para isso.</p>
-                                    
-                                    <div class="row d-flex justify-content-around my-welcome-btn-position-bot">
-                                        <a href="#"><button class="btn btn-outline-secondary my-font-size">Confira o site oficial.</button></a>
-        
-                                    </div>
+
+                                <div class="row d-flex justify-content-around my-welcome-btn-position-bot">
+                                    <a href="#"><button class="btn btn-outline-secondary my-font-size">Confira o site
+                                            oficial.</button></a>
+
+                                </div>
                             </div>
-                            
+
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-4 col-md-6 mt-3 order-md-1 order-lg-12">
                         <div class="card my-welcome-card-height-0">
                             <img src="images/new/obmep.png" alt="obmep" class="card-img-top">
                             <div class="card-body">
                                 <h4 class="card-title my-font-size">Olimpíadas brasileiras de matemática.</h4>
-                                <p class="card-text lead my-font-size">Também participamos da OBMEP! Nela é colocado em prática toda a
+                                <p class="card-text lead my-font-size">Também participamos da OBMEP! Nela é colocado em
+                                    prática toda a
                                     lógica e os conhecimentos de matemática do aluno.</p>
                                 <div class="row d-flex justify-content-around my-welcome-btn-position-bot">
                                     <a href="#"><button class="btn btn-outline-secondary my-font-size">Confira o site
                                             oficial.</button></a>
-    
-                                    <a href="#"><button class="btn btn-outline-secondary my-font-size">Nossa olimpíada.</button></a>
+
+                                    <a href="#"><button class="btn btn-outline-secondary my-font-size">Nossa
+                                            olimpíada.</button></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-    
+
             </div>
         </section>
-        
+
+
+
         <!--   Three colum  -->
         <!--   Welcome Section  -->
     </div>
+
+    <footer>
+        <div class="container">
+            <div class="row d-flex ">
+                <div id="redes-sociais" class="col-lg-6 justify-content-end">
+                    <h5>Nos siga nas redes sociais</h5>
+                    <a href="#"><i class="fab fa-facebook"></i></a> |
+                    <a href="#"><i class="fab fa-twitter"></i></a> |
+                    <a href="#"><i class="fab fa-instagram"></i></a> |
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+
+                    <br><br>
+
+                    <h5>Contate-nos</h5>
+                    <a href="Tel:99999-9999" class="telefone">(99)99999-9999</a>
+
+                </div>
+
+                <div id="footer-nav" class="col-lg-6">
+                    <h5>Continue explorando</h5>
+                    <a href="">Home</a> <br>
+                    <a href="">Fotos/vídeos</a><br>
+                    <a href="">Agenda escolar</a> |
+                    <a href="">Lista de materiais</a> |
+                    <a href="">Eventos</a> <br>
+                    <a href="">Matricular</a>
+                </div>
+
+                <div id="copy" class="col-lg-12">
+                    <span>Site criado com propósitos educacionais</span> <br>
+                    <em> &copy; Nenhuma violação de direitos autorais pretendida </em>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -305,7 +332,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <script src="test.js"></script>
 </body>
 

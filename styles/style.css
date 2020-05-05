@@ -8,6 +8,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 
@@ -224,9 +225,61 @@ body{
         
     }
 
-    
+/*------------Footer------------*/
+footer{
+    margin-top: 10px;
+    background: #e6e6e6;
+    border-top: 3px groove #0084ff;
+}
+footer #redes-sociais{
+    padding: 30px;
+    text-align: center;
+}
 
-    
+footer #redes-sociais i{
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 1.95em;
+    color: #0059ff;
+}
+
+footer #redes-sociais a i:hover{
+    cursor: pointer;
+    transition: .2s;
+    color: #001aff;
+}
+
+footer #redes-sociais .telefone{
+    text-decoration: none;
+}
+
+footer #footer-nav{
+    padding: 30px;
+    text-align: center;
+}
+
+footer #footer-nav a{
+    padding: 10px;
+}
+
+footer #copy{
+    margin-top: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+footer #copy em{
+    font-weight: 700;
+    color: #df5616;
+}
+
+footer #copy span{
+    font-weight: 600;
+    color: #df5616;
+}
+
+/*------------Footer------------*/
+
 
     
 
